@@ -1,6 +1,8 @@
 <?php
 include "header.php";
 include "body.php";
+include 'conexao.php';
+$res = pg_query("SELECT * FROM treinos order by id;");
 ?>
 
 
@@ -8,24 +10,23 @@ include "body.php";
     <table class="table table-bordered table-hover" style="background-color: #8C8A8A;">
         <thead>
             <tr>
-                <th> Treino </th>
-                <th> Nome </th>
+                <!--<th> id </th>-->
+                <th>Treino</th>
+                <th>Proposito</th>
                 <th>Rendimento</th>
             </tr>
         </thead>
         <tbody>
 
-            <tr>
-                <td>1</td>
-                <td>Perda</td>
-                <td>90%</td>
-            </tr>
-
-            <tr>
-                <td>2</td>
-                <td>Ganho</td>
-                <td>95%</td>
-            </tr>
+            <?php while ($row = pg_fetch_object($res)) : ?>
+        <tr>
+            <!--<td><? = $row->id; ?></td>-->
+            <td><?= $row->treino; ?></td>
+            <td><?= $row->proposito; ?></td>
+            <td><?= $row->rendimento; ?></td>
+        </tr>
+        <?php endwhile; ?>
+        
         </tbody>
     </table>
     <?php

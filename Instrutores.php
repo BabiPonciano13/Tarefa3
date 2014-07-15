@@ -8,6 +8,7 @@ $res = pg_query("SELECT * FROM instrutor order by id;");
 ?>
 
 <div class="col-md-8">
+    
     <table class="table table-bordered table-hover" style="background-color: #8C8A8A;">
         <thead>
             <tr>
@@ -15,6 +16,7 @@ $res = pg_query("SELECT * FROM instrutor order by id;");
                 <th> Intrutores </th>
                 <th> Nome </th>
                 <th>Horário</th>
+                <th>Editar</th>
                 <th>Excluir</th>
             </tr>
         </thead>
@@ -25,12 +27,14 @@ $res = pg_query("SELECT * FROM instrutor order by id;");
             <td><?= $row->instrutores; ?></td>
             <td><?= $row->nome; ?></td>
             <td><?= $row->horario; ?></td>
+            <td><a href="#" class="btn btn-info">Editar</a></td>
             <td><a href="deletar.php?id=<?= $row->id; ?>" class="btn btn-danger">Excluir</a></td>
         </tr>
         <?php endwhile; ?>
            
         </tbody>
     </table>
+    <a href="forminsert.php" class="btn btn-success">Inserir</a>
     <?php
     include "footer.php";
     

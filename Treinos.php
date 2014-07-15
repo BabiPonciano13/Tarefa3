@@ -14,6 +14,7 @@ $res = pg_query("SELECT * FROM treinos order by id;");
                 <th>Treino</th>
                 <th>Proposito</th>
                 <th>Rendimento</th>
+                <th>Editar</th>
                 <th>Excluir</th>
             </tr>
         </thead>
@@ -25,6 +26,7 @@ $res = pg_query("SELECT * FROM treinos order by id;");
             <td><?= $row->treino; ?></td>
             <td><?= $row->proposito; ?></td>
             <td><?= $row->rendimento; ?></td>
+            <td><a href="#" class="btn btn-info">Editar</a></td>
             <td><a href="deletar_treinos.php?id=<?= $row->id; ?>" class="btn btn-danger">Excluir</a></td>
         </tr>
         <?php endwhile; ?>

@@ -5,7 +5,7 @@ include 'conexao.php';
 $id = $_GET['id'];
 
 
-pg_query("DELETE FROM usuario WHERE id = $id ");
+pg_query("DELETE FROM instrutor WHERE id = $id ");
 
 
-header("location: listar.php");
+header("location: Instrutores.php");

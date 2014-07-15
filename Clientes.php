@@ -14,6 +14,7 @@ $res = pg_query("SELECT * FROM clientes order by id;"); ?>
         <th>Estado</th>
         <th>Numero</th>
         <th>Email</th>
+        <th>Excluir</th>
     </tr>
     </thead>
     <tbody>
@@ -26,6 +27,7 @@ $res = pg_query("SELECT * FROM clientes order by id;"); ?>
             <td><?= $row->estado; ?></td>
             <td><?= $row->numero; ?></td>
             <td><?= $row->email; ?></td>
+            <td><a href="deletar_clientes.php?id=<?= $row->id; ?>" class="btn btn-danger">Excluir</a></td>
             </tr>
         <?php endwhile; ?>
         

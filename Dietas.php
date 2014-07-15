@@ -13,6 +13,7 @@ $res = pg_query("SELECT * FROM dietas order by id;");
                 <th>Dieta</th>
                 <th>Tipo</th>
                 <th>Calorias</th>
+                <th>Excluir</th>
             </tr>
         </thead>
         <tbody>
@@ -23,6 +24,7 @@ $res = pg_query("SELECT * FROM dietas order by id;");
             <td><?= $row->dieta; ?></td>
             <td><?= $row->tipo; ?></td>
             <td><?= $row->calorias; ?></td>
+            <td><a href="deletar_dietas.php?id=<?= $row->id; ?>" class="btn btn-danger">Excluir</a></td>
         </tr>
         <?php endwhile; ?>
         

@@ -1,0 +1,96 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+body {
+	background: gray;
+}
+
+ul { 
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+ul li a {
+	
+	display: block; 
+	float: left; 
+	padding: 5px; 
+	border: 1px solid black;
+	text-decoration: none;
+	color: black;
+}
+
+ul li a:hover {
+	text-decoration: none;
+	background: gray;
+	color: white;
+}
+label {
+	list-style: none;
+	display: block;
+	font: 24px Arial, Verdana, Geneva, Helvetica, Sans-serif;
+	float: left;
+	width: 200px;
+	margin: 10px;
+	position: relative;
+}
+
+fieldset {
+	width: 475px;
+	border: 1px solid #AFAFAF;
+	margin-bottom: 15px;
+	
+}
+
+fieldset legend {
+	font: bold 18px Verdana, Geneva, Arial, Helvetica, Sans-serif;
+	color: #14077F;
+}
+
+label {
+	display: block;
+	font: 14px Arial, Verdana, Geneva, Helvetica, Sans-serif;
+	float: left;
+	width: 200px;
+	margin: 10px;
+	position: relative;
+}
+input {
+	width: 200px;
+	display: block;
+	color: 1px solid #AFAFAF;
+	font: 12px Arial, Verdana, Geneva, Helvetica, Sans-serif;
+}
+
+input:focus {
+	border: 2px solid green;
+	background: #FDFFEF;
+}
+.pInput {
+	width: 50px;
+	display: block;
+}
+.mInput {
+	width: 450px;
+
+}
+.gInput {
+	width: 100px;
+}
+.btnSubimit {
+	width: 50px;
+	height: 25px;
+	position: absolute;
+	left: 50px;
+	margin-bottom: 20px;
+}
+fieldset span {
+	font: italic 10px Arial, Verdana, Geneva, Helvetica, Sans-serif;
+	color: #CCC;
+	position: absolute;
+	right: 0px;
+}
+

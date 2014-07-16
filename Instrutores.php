@@ -5,6 +5,7 @@ include "body.php";
 include 'conexao.php';
 
 $res = pg_query("SELECT * FROM instrutor order by id;");
+
 ?>
 
 <div class="col-md-8">
@@ -34,7 +35,7 @@ $res = pg_query("SELECT * FROM instrutor order by id;");
            
         </tbody>
     </table>
-    <a href="forminsert.php" class="btn btn-success">Inserir</a>
+    <a href="formulario_instrutores.php" class="btn btn-success">Inserir</a>
     <?php
     include "footer.php";
     

@@ -32,6 +32,7 @@ $res = pg_query("SELECT * FROM dietas order by id;");
         
         </tbody>
     </table>
+    <a href="formulario_dietas.php" class="btn btn-success">Inserir</a>
     <?php
     include "footer.php";
  

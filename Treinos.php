@@ -33,6 +33,7 @@ $res = pg_query("SELECT * FROM treinos order by id;");
         
         </tbody>
     </table>
+    <a href="formulario_treinos.php" class="btn btn-success">Inserir</a>
     <?php
     include "footer.php";
     

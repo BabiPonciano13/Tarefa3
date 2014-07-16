@@ -2,7 +2,7 @@
 
 include 'conexao.php';
 
-$res = pg_query("SELECT * FROM usuario order by id;");
+$res = pg_query("SELECT * FROM clientes order by id;");
 ?>
 
 <a href="forminsert.php">Insert</a>
@@ -21,7 +21,24 @@ $res = pg_query("SELECT * FROM usuario order by id;");
         <tr>
             <td><?= $row->id; ?></td>
             <td><?= $row->login; ?></td>
+            
+            
             <td><a href="formeditar.php?id=<?= $row->id; ?>&login=<?= $row->login; ?>">Editar</a></td>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             <td><a href="deletar.php?id=<?= $row->id; ?>">Excluir</a></td>
            
         </tr>

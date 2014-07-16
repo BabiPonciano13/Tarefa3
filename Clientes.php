@@ -28,7 +28,7 @@ $res = pg_query("SELECT * FROM clientes order by id;"); ?>
             <td><?= $row->estado; ?></td>
             <td><?= $row->numero; ?></td>
             <td><?= $row->email; ?></td>
-            <td><a href="formeditar2.php" class="btn btn-info">Editar</a></td>
+            <td><a href="formeditar2.php?id=<?= $row->id; ?>&nome=<?= $row->nome; ?>&cpf=<?= $row->cpf; ?>&estado=<?= $row->estado; ?>&numero=<?= $row->numero; ?>&email=<?= $row->email; ?>" class="btn btn-info">Editar</a></td>
             <td><a href="deletar_clientes.php?id=<?= $row->id; ?>" class="btn btn-danger">Excluir</a></td>
             </tr>
         <?php endwhile; ?>

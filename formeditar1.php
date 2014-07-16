@@ -9,23 +9,24 @@ include "body.php";
 <div class="col-md-11">
     <form action="editar1.php" method="POST">
         <fieldset>
-
+            
+            <input type="hidden" name="id" value="<?= $_GET['id'];  ?>"/>
             <div class="form-group">
                 <label for="inputInstrutores" class="col-sm-2 control-label">Instrutores</label>
                 <div class="col-sm-10">
-                    <input type="text" name="instrutores" value="<?= $_GET['login']; ?>"  class="form-control" id="inputInstrutores" placeholder="Instrutores">
+                    <input type="text" name="instrutores" value="<?= $_GET['instrutor']; ?>"  class="form-control" id="inputInstrutores" placeholder="Instrutores">
                 </div>
             </div>
             <div class="form-group">
                 <label for="inputNome" class="col-sm-2 control-label">Nome</label>
                 <div class="col-sm-10">
-                    <input type="text" name="nome" value="<?= $_GET['login']; ?>" class="form-control" id="inputNome" placeholder="Nome">
+                    <input type="text" name="nome" value="<?= $_GET['nome']; ?>" class="form-control" id="inputNome" placeholder="Nome">
                 </div>
             </div>
             <div class="form-group">
                 <label for="inputHorario" class="col-sm-2 control-label">Horario</label>
                 <div class="col-sm-10">
-                    <input type="text" name="horario" value="<?= $_GET['login']; ?>" class="form-control" id="inputHorario" placeholder="Horario">
+                    <input type="text" name="horario" value="<?= $_GET['horario']; ?>" class="form-control" id="inputHorario" placeholder="Horario">
                 </div>
             </div>
 

@@ -35,6 +35,7 @@ $res = pg_query("SELECT * FROM clientes order by id;"); ?>
         
     </tbody>
 </table>
+    <a href="formulario_clientes.php" class="btn btn-success">Inserir</a>
 <?php include "footer.php"; ?>
 </div>
        

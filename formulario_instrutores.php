@@ -4,7 +4,7 @@ include "body.php";
 ?>
 
 <meta charset="UTF-8">
-<div style="text-align: center"><h2>Inserir Instrutor</h2></div>
+<div style="text-align: center"><h2>Cadastrar Instrutor</h2></div>
 
 <div class="col-md-11">
     <form action="inserirForm.php" method="POST">

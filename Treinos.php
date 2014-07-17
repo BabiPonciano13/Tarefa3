@@ -10,7 +10,7 @@ $res = pg_query("SELECT * FROM treinos order by id;");
     <table class="table table-bordered table-hover" style="background-color: #8C8A8A;">
         <thead>
             <tr>
-                <th> id </th>
+                <th> # </th>
                 <th>Treino</th>
                 <th>Proposito</th>
                 <th>Rendimento</th>
@@ -26,7 +26,7 @@ $res = pg_query("SELECT * FROM treinos order by id;");
             <td><?= $row->treino; ?></td>
             <td><?= $row->proposito; ?></td>
             <td><?= $row->rendimento; ?></td>
-            <td><a href="formeditar3.php" class="btn btn-info">Editar</a></td>
+            <td><a href="formeditar3.php?id=<?= $row->id; ?>&treino=<?= $row->treino; ?>&proposito=<?= $row->proposito; ?>&rendimento=<?= $row->rendimento; ?>" class="btn btn-info">Editar</a></td>
             <td><a href="deletar_treinos.php?id=<?= $row->id; ?>" class="btn btn-danger">Excluir</a></td>
         </tr>
         <?php endwhile; ?>

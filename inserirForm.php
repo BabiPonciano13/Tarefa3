@@ -6,6 +6,6 @@ $instrutor = $_POST['instrutores'];
 $nome = $_POST['nome'];
 $horario = $_POST['horario'];
 
-pg_query("INSERT INTO instrutor(instrutores, nome, horario) VALUES ('$instrutor', '$nome', '$horario') ");
+pg_query("INSERT INTO instrutor( nome, horario) VALUES ('$nome', '$horario') ");
 
 header("location: Instrutores.php");

@@ -1,4 +1,4 @@
-<body style="background-color: #D6C6F4;">
+<body style="background-color: #ccf;">
     <nav class="navbar navbar-inverse" role="navigation">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->

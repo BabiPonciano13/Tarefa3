@@ -4,7 +4,7 @@ include "body.php";
 ?>
 
 <meta charset="UTF-8">
-<div style="text-align: center"><h2>Inserir Tipo de Dieta</h2></div>
+<div style="text-align: center"><h2>Editar Tipo de Dieta</h2></div>
 
 <div class="col-md-11">
     <form action="editar4.php" method="POST">

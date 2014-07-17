@@ -1,7 +1,8 @@
 <?php
 include "header.php";
 include "body.php";
-?>
+include 'conexao.php';
+$res = pg_query("select * from instrutor"); ?>
 
 <meta charset="UTF-8">
 <div style="text-align: center"><h2>Cadastrar Cliente</h2></div>
@@ -38,6 +39,16 @@ include "body.php";
                 <label for="inputEmail" class="col-sm-2 control-label">Email</label>
                 <div class="col-sm-10">
                     <input type="text" name="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputInstrutor" class="col-sm-2 control-label">Instrutor</label>
+                <div class="col-sm-10">
+                    <select name="instrutor">
+                        <?php while ($row = pg_fetch_object($res)) : ?>
+                        <option value="<?php echo $row->id;?>"><?=$row->nome?></option>
+                        <?php endwhile; ?>
+                    </select>
                 </div>
             </div>
             

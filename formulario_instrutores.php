@@ -11,12 +11,6 @@ include "body.php";
         <fieldset>
 
             <div class="form-group">
-                <label for="inputInstrutores" class="col-sm-2 control-label">Instrutores</label>
-                <div class="col-sm-10">
-                    <input type="text" name="instrutores"  class="form-control" id="inputInstrutores" placeholder="Instrutores">
-                </div>
-            </div>
-            <div class="form-group">
                 <label for="inputNome" class="col-sm-2 control-label">Nome</label>
                 <div class="col-sm-10">
                     <input type="text" name="nome" class="form-control" id="inputNome" placeholder="Nome">

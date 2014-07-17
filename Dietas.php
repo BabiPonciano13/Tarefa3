@@ -6,6 +6,7 @@ $res = pg_query("SELECT * FROM dietas order by id;");
 ?>
 
 <div class="col-md-8">
+    <div style="text-align: center"><h2>Dietas</h2></div>
     <table class="table table-bordered table-hover" style="background-color: #8C8A8A;">
         <thead>
             <tr>

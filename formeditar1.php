@@ -4,19 +4,13 @@ include "body.php";
 ?>
 
 <meta charset="UTF-8">
-<div style="text-align: center"><h2>Cadastrar Instrutor</h2></div>
+<div style="text-align: center"><h2>Editar Instrutor</h2></div>
 
 <div class="col-md-11">
     <form action="editar1.php" method="POST">
         <fieldset>
             
             <input type="hidden" name="id" value="<?= $_GET['id'];  ?>"/>
-            <div class="form-group">
-                <label for="inputInstrutores" class="col-sm-2 control-label">Instrutores</label>
-                <div class="col-sm-10">
-                    <input type="text" name="instrutores" value="<?= $_GET['instrutor']; ?>"  class="form-control" id="inputInstrutores" placeholder="Instrutores">
-                </div>
-            </div>
             <div class="form-group">
                 <label for="inputNome" class="col-sm-2 control-label">Nome</label>
                 <div class="col-sm-10">

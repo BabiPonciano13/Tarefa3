@@ -9,6 +9,9 @@ $email = $_POST['email'];
 $instrutor = $_POST['instrutor'];
 
 
-pg_query("INSERT INTO clientes( nome, cpf, estado, numero, email, instrutor) VALUES ('$nome', '$cpf', '$estado', $numero, '$email', $instrutor) ");
+
+$deucerto = pg_query("INSERT INTO clientes( nome, cpf, estado, numero, email, instrutor) VALUES ('$nome', '$cpf', '$estado', $numero, '$email', $instrutor) ");
+
+
 
 header("location: Clientes.php");

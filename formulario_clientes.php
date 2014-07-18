@@ -46,7 +46,7 @@ $res = pg_query("select * from instrutor"); ?>
                 <div class="col-sm-10">
                     <select name="instrutor">
                         <?php while ($row = pg_fetch_object($res)) : ?>
-                        <option value="<?php echo $row->id;?>"><?=$row->nome?></option>
+                        <option value="<?php echo $row->id;?>"><?=$row->nome; ?></option>
                         <?php endwhile; ?>
                     </select>
                 </div>

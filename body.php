@@ -19,6 +19,7 @@
                     <li><a href="Clientes.php">Clientes</a></li>
                     <li><a href="Treinos.php">Treinos</a></li>
                     <li><a href="Dietas.php">Dietas</a></li>
+                    <li><a href="usuarios.php">Usuarios</a></li>
                     <li><a href="Logout.php"><span class="glyphicon glyphicon-off"></span> Sair</a></li>
 
                 </ul>

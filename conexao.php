@@ -2,9 +2,9 @@
 
 $servidor   = 'localhost';
 $usuario    = 'academia';
-$senha      = 'academia';
+$postgressenha      = 'academia';
 $dbname     = 'academia';
 
-$conexao = pg_connect("host=$servidor user=$usuario password=$senha dbname=$dbname")
+$conexao = pg_connect("host=$servidor user=$usuario password=$postgressenha dbname=$dbname")
         or die("Não foi possivel se conectar");
 

@@ -2,9 +2,9 @@
 include "header.php";
 include "body.php";
 include 'conexao.php';
-$res = pg_query("select * from instrutor"); ?>
-
+$res = pg_query("select * from instrutor"); 
 ?>
+
 
 <meta charset="UTF-8">
 <div style="text-align: center"><h2>Editar Cliente</h2></div>
@@ -48,7 +48,7 @@ $res = pg_query("select * from instrutor"); ?>
                 <div class="col-sm-10">
                    <select name="instrutor">
                         <?php while ($row = pg_fetch_object($res)) : ?>
-                        <option value="<?php echo $row->id;?>"><?=$row->nome?></option>
+                        <option <?php if ($row->nome == $_GET['instrutor']) {echo 'selected';} ?> value="<?php echo $row->id;?>"><?=$row->nome?></option>
                         <?php endwhile; ?>
                     </select>
                 </div>
